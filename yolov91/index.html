@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YOLOv8 Image Detection</title>
+
+</head>
+
+<body>
+
+    <h1>Upload Image for YOLOv8 Detection</h1>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+
+        <input type="file" name="file" accept="image/*" required>
+
+        <br>
+
+        <label for="imgsz">Image Size:</label>
+
+        <input type="number" name="imgsz" value="1280">
+
+        <br>
+
+        <label for="show">Show Output:</label>
+
+        <input type="checkbox" name="show" checked>
+
+        <br>
+
+        <label for="hide_labels">Hide Labels:</label>
+
+        <input type="checkbox" name="hide_labels" checked>
+
+        <br>
+
+        <input type="submit" value="Upload">
+
+    </form>
+
+</body>
+
+</html>
